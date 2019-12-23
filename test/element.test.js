@@ -6,6 +6,6 @@ describe("Interacting with elements", function(){
         let text = $(".heading").getText();
         console.log(text);
         internetPage.getLiText(); 
-
+        internetPage.getSpecificElementText(3);
     })
 })

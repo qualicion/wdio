@@ -19,8 +19,17 @@ class Internet {
     }
 
     getLiText(){
-        this.childElements.filter((element)); 
+        this.childElements.filter((element) => {
             console.log(element.getText());
+        })
+    }
+
+    specificChildElement(index){
+        return this.parent.$('li:nth-child(${index})');
+    }
+
+    getSpecificElementText(index){
+       console.log(this.specificChildElement(index).getText());
     }
 }
 module.exports = new Internet(); 
