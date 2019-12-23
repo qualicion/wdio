@@ -11,7 +11,7 @@ class Internet {
     }
 
     get parent(){
-        return $(ul);
+        return $('ul');
     }
     
     get childElements(){
@@ -25,7 +25,7 @@ class Internet {
     }
 
     specificChildElement(index){
-        return this.parent.$('li:nth-child(${index})');
+        return this.parent.$(`li:nth-child(${index})`);
     }
 
     getSpecificElementText(index){
