@@ -2,6 +2,7 @@ class Internet {
     get pageHeader() {
         return $('h1.heading'); 
     }
+    
     get subHeading(){
         return $('h2');
     }
