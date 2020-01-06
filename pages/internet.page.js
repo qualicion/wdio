@@ -6,6 +6,10 @@ class Internet {
         return $('h2');
     }
 
+    get h3Header(){
+        return $('h3');
+    }
+
     get pageFooter(){
         return $('#page-footer')
     }
@@ -22,6 +26,24 @@ class Internet {
         return $('ul li:nth-child(1) a');
     }
 
+    link(index) {
+        return $(`ul li:nth-child(${index}) a`);
+    }
+
+    clickLink(index){
+        this.link.waitForDisplayed();
+        this.link(indexed).click();
+    }
+
+    checkboxes(index){
+        return $(`#checkboxes input:nth-child(${index})`);
+    }
+
+    clickCheckbox(index){
+        this.checkboxes(index).waitForDisplayed();
+        this.checkboxes(index).click();
+    }
+
     getLiText(){
         this.childElements.filter((element) => {
             console.log(element.getText());
@@ -33,14 +55,15 @@ class Internet {
     }
 
     getSpecificElementText(index){
-       console.log(this.specificChildElement(index).getText());
+        this.specificChildElement(index).waitForDisplayed();
+       return this.specificChildElement(index).getText();
     }
 
     clickOnLink(){
         if(this.firstLink.isDisplayed() === true){
             this.firstLink.click();
         }
-        browser.pause(5000);
+        this.h3Header.waitForDisplayed();
     }
 }
 module.exports = new Internet(); 

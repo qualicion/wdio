@@ -1,30 +1,35 @@
-const internetPage = require("../pages/internet.page");
+const internetPage = require('../pages/internet.page');
 
-describe("Interacting with elements", function(){
-    it("Get text for element", () => {
+describe('Interacting with elements', function(){
+    it('Get text for element', () => {
         browser.url('/');
-        let text = $(".heading").getText();
+        let text = $('.heading').getText();
         console.log(text);
         internetPage.getLiText(); 
         internetPage.getSpecificElementText(3);
     })
 
-    it("Is footer displayed", () => {
+    it('Is footer displayed', () => {
         console.log(internetPage.pageFooter.isDisplayed());
     })
-    it("Does header exist?", () => {
+
+    it('Does header exist?', () => {
         console.log(internetPage.pageHeader.isExisting());
     })
-    it("Is footer in viewport?", () =>{
+
+    it('Is footer in viewport?' , () => {
         console.log(internetPage.pageHeader.isDisplayedInViewport());
     })
-    it("Is footer in viewport?", () =>{
+
+    it('Is footer in viewport?', () => {
         console.log(internetPage.pageFooter.isDisplayedInViewport());
     })
-    it("Is subheader enabled?", () => {
+
+    it('Is subheader enabled?', () => {
         console.log(internetPage.subHeading.isEnabled());
     })
-    it("Click Element", () => {
+
+    it('Click Element', () => {
         internetPage.clickOnLink();
     })
 })
