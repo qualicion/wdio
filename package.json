@@ -22,5 +22,6 @@
     "wdio-chromedriver-service": "^5.0.2",
     "webdriverio": "^5.16.11"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "repository": "https://github.com/qualicion/wdio"
 }
