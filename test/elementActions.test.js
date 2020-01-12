@@ -1,4 +1,4 @@
-internetPage = require("../pages/internet.page");
+internetPage = require('../pages/internet.page');
 
 describe('Test element action', function () {
     it('should click element', () => {
@@ -15,8 +15,29 @@ describe('Test element action', function () {
     it('should click text box', () => {
         internetPage.clickLink(6);
         internetPage.clickCheckbox(1);
-        expect(internetPage.checkbox(1).isSelected()).equals(true);
+        expect(internetPage.checkboxes(1).isSelected()).equals(true);
+    })
+
+    it('should uncheck checkbox', () => {
+        internetPage.clickCheckbox(1);
+        expect(internetPage.checkboxes(1).isSelected()).equals(false);
+    })
+
+    it('should enter username', () => {
+        browser.url(`${browser.options.baseUrl}/login`);
+        internetPage.enterUsername('Julia');
+        assert.equal('Julia', internetPage.username.getValue());
+    })
+
+    it('should enter password', () => {
+        browser.url(`${browser.options.baseUrl}/login`);
+        internetPage.enterPassword('Password');
+        assert.equal('Password', internetPage.password.getValue());
+    })
+
+    it('should clear text area',() => {
+        internetPage.username.click();
+        internetPage.username.clearValue();
+        assert.equal('', internetPage.username.getValue());
     })
 })
-
-
