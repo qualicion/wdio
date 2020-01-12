@@ -27,13 +27,32 @@ class Internet {
         return $('ul li:nth-child(1) a');
     }
 
+    get username(){
+        return $('#username');
+    }
+
+    get password(){
+        return $('#password');
+    }
+
+    enterUsername(text){
+        this.username.waitForDisplayed();
+        this.username.setValue(text);
+    }
+
+    enterPassword(text){
+        this.password.waitForDisplayed();
+        this.password.setValue(text);
+    }
+
+
     link(index) {
         return $(`ul li:nth-child(${index}) a`);
     }
 
     clickLink(index){
-        this.link.waitForDisplayed();
-        this.link(indexed).click();
+        this.link(index).waitForDisplayed();
+        this.link(index).click();
     }
 
     checkboxes(index){
