@@ -35,6 +35,14 @@ class Internet {
         return $('#password');
     }
 
+    get target(){
+        return $('.example #target');
+    }   
+
+    get result(){
+        return $('.example #result');
+    }  
+
     figures(index){
         return $(`.example .figure:nth-child(${index}) img`);
     }
@@ -53,6 +61,21 @@ class Internet {
         return this.figureDetails(index).getText();
     }
 
+    clickTarget(){
+        this.target.waitForDisplayed();
+        this.target.click();
+    }
+
+    sendKeysToTarget(text){
+        this.target.waitForDisplayed();
+        this.target.keys(text);
+    }
+
+    getResultText(){
+        this.result.waitForDisplayed();
+        return this.result.getText();
+    }
+
     enterUsername(text){
         this.username.waitForDisplayed();
         this.username.setValue(text);
@@ -62,7 +85,6 @@ class Internet {
         this.password.waitForDisplayed();
         this.password.setValue(text);
     }
-
 
     link(index) {
         return $(`ul li:nth-child(${index}) a`);
