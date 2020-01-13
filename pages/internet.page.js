@@ -51,6 +51,10 @@ class Internet {
         return $(`.example .figure:nth-child(${index}) .figcaption h5`);
     }
 
+    scrollToPageFooter(){
+        this.pageFooter.moveTo();
+    }
+
     hoverOnFigure(index){
         this.figures(index).waitForDisplayed();
         this.figures(index).moveTo(1,1);
