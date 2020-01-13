@@ -23,6 +23,8 @@
     "webdriverio": "^5.16.11",
     "yarn": "^1.21.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@hapi/cryptiles": "^5.0.0"
+  },
   "repository": "https://github.com/qualicion/wdio"
 }
