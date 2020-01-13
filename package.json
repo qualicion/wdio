@@ -20,7 +20,8 @@
     "chromedriver": "^78.0.1",
     "local-runner": "^0.1.1-alpha",
     "wdio-chromedriver-service": "^5.0.2",
-    "webdriverio": "^5.16.11"
+    "webdriverio": "^5.16.11",
+    "yarn": "^1.21.1"
   },
   "dependencies": {},
   "repository": "https://github.com/qualicion/wdio"
