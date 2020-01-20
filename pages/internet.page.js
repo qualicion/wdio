@@ -43,6 +43,15 @@ class Internet {
         return $('.example #result');
     }  
 
+    get hereLink(){
+        return $('.example a');
+    }
+
+    clickHereLink(){
+        this.hereLink.waitForDisplayed();
+        this.hereLink.click();
+    }
+
     figures(index){
         return $(`.example .figure:nth-child(${index}) img`);
     }
