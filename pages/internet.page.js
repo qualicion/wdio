@@ -47,6 +47,22 @@ class Internet {
         return $('.example a');
     }
 
+    get iFrameBody(){
+        return $('#tinymce');
+    }
+
+    get iFrame(){
+        return $('#mceu_27 #mce_0_ifr');
+    }
+
+    sendTextToBody(text){
+        this.iFrameBody.waitForDisplayed();
+        this.iFrameBody.clearValue();
+        this.iFrameBody.click();
+        this.iFrameBody.keys(text);
+    }
+    
+
     clickHereLink(){
         this.hereLink.waitForDisplayed();
         this.hereLink.click();
