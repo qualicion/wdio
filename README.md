@@ -9,3 +9,16 @@ Lessons
 12/01/12 
 - Learnt how to verify key presses 
 - Learnt how to get value from input boxes
+
+13/01/20
+- Learnt the moveTo function 
+
+20/01/20 
+- Learnt the switchWindow function 
+
+21/01/20 
+- Learnt the switchToFrame function
+
+23/01/20
+- Learnt how to do a drag and drop
+- Learnt how to select a drop down 
