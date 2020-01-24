@@ -55,6 +55,71 @@ class Internet {
         return $('#mceu_27 #mce_0_ifr');
     }
 
+    get columnA(){
+        return $('#column-a');
+    }
+
+    get columnB(){
+        return $('#column-b');
+    }
+
+    get columnAHeader(){
+        return $('#column-a header');
+    }
+
+    get columnBHeader(){
+        return $('#column-b header');
+    }
+
+    get draggable(){
+        return $('#draggable');
+    }
+
+    get droppable(){
+        return $('#droppable');
+    }
+
+    get droppableParagraph(){
+        return $('#droppable p');
+    }
+
+    get dropDownMenu(){
+        return $('#dropdown');
+    }
+
+    get dropDownMenuOption1(){
+        return $('#dropdown option:nth-child(2)');
+    }
+
+    get dropDownMenuOption2(){
+        return $('#dropdown option:nth-child(3)')
+    }
+    
+    clickDropDownMenu(){
+        this.dropDownMenu.waitForDisplayed();
+        this.dropDownMenu.click();
+    }
+
+    clickDropDownMenuOption1(){
+        this.dropDownMenuOption1.waitForDisplayed();
+        this.dropDownMenuOption1.click();
+    }
+
+    clickDropDownMenuOption2(){
+        this.dropDownMenuOption2.waitForDisplayed();
+        this.dropDownMenuOption2.click();
+    }
+
+    draggableToDroppable(){
+        this.draggable.waitForDisplayed();
+        this.draggable.dragAndDrop(this.droppable);
+    }
+
+    dragColumnAToColumnB(){
+        this.columnA.waitForDisplayed();
+        this.columnA.dragAndDrop(this.columnB);
+    }
+
     sendTextToBody(text){
         this.iFrameBody.waitForDisplayed();
         this.iFrameBody.clearValue();
@@ -62,7 +127,6 @@ class Internet {
         this.iFrameBody.keys(text);
     }
     
-
     clickHereLink(){
         this.hereLink.waitForDisplayed();
         this.hereLink.click();
