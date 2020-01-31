@@ -22,3 +22,9 @@ Lessons
 23/01/20
 - Learnt how to do a drag and drop
 - Learnt how to select a drop down 
+
+24/10/20 
+- Learnt 
+
+31/10/20
+- Learnt java script alert 
