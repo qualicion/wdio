@@ -99,8 +99,6 @@ class Internet {
         return $(`.example li:nth-child(${index}) button`);
     }
 
-    
-
     clickJavascriptAlertButton(index){
         this.javascriptAlertButton(index).waitForDisplayed();
         this.javascriptAlertButton(index).click();

@@ -26,5 +26,10 @@ Lessons
 24/10/20 
 - Learnt 
 
-31/10/20
+30/10/20
 - Learnt java script alert 
+
+31/10/20
+- Learnt
+
+
