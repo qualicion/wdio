@@ -1,5 +1,4 @@
-internetPage = require('../pages/internet.page');
-
+const internetPage = require('../pages/internet.page');
 
 describe('Switch window', () => {
     it('should switch to the next window', () => {

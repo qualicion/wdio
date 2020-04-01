@@ -1,4 +1,4 @@
-internetPage = require('../pages/internet.page');
+const internetPage = require('../pages/internet.page');
 
 describe('Interacting with elements', () => {
     it('Get text for element', () => {
