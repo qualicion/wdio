@@ -1,5 +1,6 @@
 const internetPage = require('../pages/internet.page');
 
+
 describe('Switch to iframe', () => {
     it('should switch to iframe',() =>{
         browser.url(`${browser.options.baseUrl}/iframe`);
