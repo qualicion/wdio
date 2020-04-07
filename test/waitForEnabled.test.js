@@ -11,7 +11,6 @@ describe('Wait for Enabled', () => {
     it('should wait for the input field to be disabled', () => {
         internetPage.clickEnableButton();
         internetPage.inputEnabledField.waitForEnabled(4000, true);
-        browser.debug();
         assert.equal(true, internetPage.inputEnabledField.isEnabled());
     })
 });
