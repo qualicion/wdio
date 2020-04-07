@@ -227,5 +227,18 @@ class Internet {
         }
         this.h3Header.waitForDisplayed();
     }
+
+    get enabledButton(){
+        return $('#input-example button');
+    }
+
+    clickEnableButton(){
+        this.enabledButton.waitForDisplayed();
+        this.enabledButton.click();
+    }
+
+    get inputEnabledField(){
+        return $('#input-example input')
+    }
 }
 module.exports = new Internet(); 

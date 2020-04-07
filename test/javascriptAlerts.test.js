@@ -1,6 +1,4 @@
-internetPage = require('../pages/internet.page')
-
-
+const internetPage = require('../pages/internet.page')
 
 describe('Javascript alert', () => {
     it('should get text of alert', () =>{

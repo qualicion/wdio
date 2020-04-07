@@ -22,10 +22,11 @@
     "local-runner": "^0.1.1-alpha",
     "wdio-chromedriver-service": "^5.0.2",
     "webdriverio": "^5.16.11",
-    "yarn": "^1.21.1"
+    "yarn": "^1.22.4"
   },
   "dependencies": {
-    "@hapi/cryptiles": "^5.0.0"
+    "@hapi/cryptiles": "^5.0.0",
+    "minimist": "^1.2.5"
   },
   "repository": "https://github.com/qualicion/wdio"
 }
