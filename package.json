@@ -4,7 +4,8 @@
   "description": "This is a wdio tutorial",
   "main": "index.js",
   "scripts": {
-    "test": "node ./node_modules/.bin/wdio ./wdio.conf.js"
+    "test": "wdio ./wdio/config/wdio.conf.js"
+
   },
   "author": "Babatunde Oduniyi",
   "license": "ISC",
