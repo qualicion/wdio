@@ -5,7 +5,7 @@ describe('Wait for exist', () => {
         browser.url(`${browser.options.baseUrl}/add_remove_elements/`);
     });
 
-    it('add button', () => {
+    it('add delete button', () => {
         internetPage.clickAddElementBtn();
     });
 
