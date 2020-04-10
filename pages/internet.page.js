@@ -11,10 +11,6 @@ class Internet {
         return $('h3');
     }
 
-    get pageFooter(){
-        return $('#page-footer')
-    }
-
     get parent(){
         return $('ul');
     }
@@ -149,6 +145,10 @@ class Internet {
         return $(`.example .figure:nth-child(${index}) .figcaption h5`);
     }
 
+    get pageFooter(){
+        return $('#page-footer')
+    }
+    
     scrollToPageFooter(){
         this.pageFooter.moveTo();
     }
@@ -239,6 +239,24 @@ class Internet {
 
     get inputEnabledField(){
         return $('#input-example input')
+    }
+
+    get addElementBtn(){
+        return $('.example button');
+    }
+
+    clickAddElementBtn(){
+        this.addElementBtn.waitForDisplayed();
+        this.addElementBtn.click();
+    }
+
+    deleteBtn(index){
+        return $(`#elements > button:nth-child(${index}`);
+    }
+
+    clickDeleteBtn(index){
+        this.deleteBtn(index).waitForDisplayed();
+        this.deleteBtn(index).click
     }
 }
 module.exports = new Internet(); 
