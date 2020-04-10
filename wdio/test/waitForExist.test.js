@@ -1,4 +1,4 @@
-const internetPage = require('../pages/internet.page');
+const internetPage = require('../../wdio/pages/internet.page');
 
 describe('Wait for button to exist', () => {
     it('open add remove elements page', () => {

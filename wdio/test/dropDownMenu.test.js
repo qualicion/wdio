@@ -1,4 +1,4 @@
-const internetPage = require('../pages/internet.page');
+const internetPage = require('../../wdio/pages/internet.page');
 
 describe('Dropdown Menu', () => {
     it('should select option 1', () => {

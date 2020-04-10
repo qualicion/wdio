@@ -1,4 +1,4 @@
-const internetPage = require('../pages/internet.page');
+const internetPage = require('../../wdio/pages/internet.page');
 
 describe('Drag and Drop', () => {
     it.skip('should drag column A to column B', () => {
