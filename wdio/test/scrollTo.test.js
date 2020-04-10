@@ -1,4 +1,4 @@
-const internetPage = require('../pages/internet.page');
+const internetPage = require('../../wdio/pages/internet.page');
 
 describe('Scroll to element',() => {
     it('should scroll to the footer', () => {
