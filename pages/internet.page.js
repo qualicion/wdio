@@ -238,7 +238,7 @@ class Internet {
     }
 
     get inputEnabledField(){
-        return $('#input-example input')
+        return $('#input-example input');
     }
 
     get addElementBtn(){
@@ -256,7 +256,7 @@ class Internet {
 
     clickDeleteBtn(index){
         this.deleteBtn(index).waitForDisplayed();
-        this.deleteBtn(index).click
+        this.deleteBtn(index).click();
     }
 }
 module.exports = new Internet(); 
