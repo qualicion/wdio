@@ -1,6 +1,6 @@
 const internetPage = require('../pages/internet.page');
 
-describe('Wait for exist', () => {
+describe('Wait for button to exist', () => {
     it('open add remove elements page', () => {
         browser.url(`${browser.options.baseUrl}/add_remove_elements/`);
     });
