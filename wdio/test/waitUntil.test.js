@@ -1,7 +1,7 @@
 const internetPage = require('../../wdio/pages/internet.page');
 
 
-describe('Wait Until', () => {
+describe('Wait until', () => {
     it('should wait until the button text changes to add', () => {
         browser.url(`${browser.options.baseUrl}/dynamic_controls`);
         internetPage.clickPageBtn();
