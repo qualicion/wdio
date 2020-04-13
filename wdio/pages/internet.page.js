@@ -258,5 +258,14 @@ class Internet {
         this.deleteBtn(index).waitForDisplayed();
         this.deleteBtn(index).click();
     }
+
+    get pageButton(){
+        return $('#checkbox-example button')
+    }
+
+    clickPageBtn(){
+        this.pageButton.waitForDisplayed();
+        this.pageButton.click();
+    }
 }
 module.exports = new Internet(); 
