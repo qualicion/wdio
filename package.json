@@ -4,8 +4,10 @@
   "description": "This is a wdio tutorial",
   "main": "index.js",
   "scripts": {
-    "test": "wdio ./wdio/config/wdio.conf.js"
+    "test": "wdio ./wdio/config/wdio.conf.js",
+    "actions": "wdio ./wdio/config/wdio.conf.js --suite actions"
   },
+
   "author": "Babatunde Oduniyi",
   "license": "ISC",
   "devDependencies": {
