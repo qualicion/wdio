@@ -1,4 +1,4 @@
-const internetPage = require('../../wdio/pages/internet.page');
+const internetPage = require('../../pages/internet.page');
 
 describe('Test element action', () => {
     it('should click element', () => {
