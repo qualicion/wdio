@@ -1,3 +1,5 @@
 module.exports = {
-    THE_INTERNET_URL = 'http://the-internet.herokuapp.com'
+    qa: 'http://the-internet.herokuapp.com',
+    dev: 'https://www.google.co.uk/',
+    staging: 'https://uk.yahoo.com/',
 }
