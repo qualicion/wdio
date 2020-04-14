@@ -22,6 +22,13 @@ exports.config = {
     specs: [
         './wdio/test/**/*.js'
     ],
+
+    suites: {
+        actions: [
+            './wdio/test/actions/*.js'
+        ]
+    },
+
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
