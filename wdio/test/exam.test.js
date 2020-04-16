@@ -12,9 +12,14 @@ describe('Verify that user can login and logout successfully', () => {
         loginPage.getLoginPageHeader();
     })
 
-    it('Enter valid username and password', () => {
+    it('Enter valid username', () => {
         loginPage.enterUserName(loginData.valid.username);
+        assert.equal(loginData.valid.username, loginPage.username.getValue());
+    })
+
+    it('Enter valid password', () => {
         loginPage.enterPassword(loginData.valid.password);
+        assert.equal(loginData.valid.password, loginPage.password.getValue());
     })
 
     it('User is logged in successfully', () => {
@@ -26,6 +31,5 @@ describe('Verify that user can login and logout successfully', () => {
     it('User is able to logout successfully', () => {
         secureAreaPage.clickLogOutBtn();
         loginPage.getLogoutSuccessMessage();
-        browser.pause();
     })
 })
