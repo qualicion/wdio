@@ -8,13 +8,13 @@ class Login {
         this.loginPageHeader.isDisplayedInViewport();
     }
 
-    get userName(){
+    get username(){
         return $('#username');
     }
 
     enterUserName(text){
-        this.userName.waitForDisplayed();
-        this.userName.setValue(text);
+        this.username.waitForDisplayed();
+        this.username.setValue(text);
     }
 
     get password(){
