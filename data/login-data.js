@@ -5,7 +5,7 @@ module.exports = {
     },
 
     invalid: {
-        username: 'Julia',
+        username: 'tomsmith',
         password: 'Password1'
     },  
 };
