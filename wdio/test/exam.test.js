@@ -32,4 +32,32 @@ describe('Verify that user can login and logout successfully', () => {
         secureAreaPage.clickLogOutBtn();
         loginPage.getLogoutSuccessMessage();
     })
-})
+});
+
+describe('Verify user cannot login with invalid credentials', () => {
+    it('Navigate to the login page', () => {
+        browser.url(`${browser.options.baseUrl}/login`);
+    })
+
+    it('Enter username without password', () => {
+        loginPage.enterUserName(loginData.invalid.username);
+        assert.equal(loginData.invalid.username, loginPage.username.getValue());
+    })
+
+    it('Invalid password message is displayed on clicking login', () => {
+        loginPage.clickLoginBtn();
+        assert.equal('Your password is invalid!\n×', loginPage.getInvalidLoginMessage());
+    })
+
+    it('Enter password only ', () => {
+        loginPage.clearUserNameInput();
+        loginPage.clearPasswordInput();
+        loginPage.enterPassword(loginData.invalid.password);
+        assert.equal(loginData.invalid.password, loginPage.password.getValue());
+    })
+
+    it('Invalid username message is displayed on clicking login', () => {
+        loginPage.clickLoginBtn();
+        assert.equal('Your username is invalid!\n×', loginPage.getInvalidLoginMessage());
+    })
+});
