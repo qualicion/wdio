@@ -17,6 +17,10 @@ class Login {
         this.username.setValue(text);
     }
 
+    clearUserNameInput(){
+        this.username.clearValue();
+    }
+
     get password(){
         return $('#password')
     }
@@ -24,6 +28,10 @@ class Login {
     enterPassword(text){
         this.password.waitForDisplayed();
         this.password.setValue(text);
+    }
+
+    clearPasswordInput(){
+        this.password.clearValue();
     }
 
     get loginBtn(){
@@ -42,5 +50,14 @@ class Login {
     getLogoutSuccessMessage(){
         this.logoutSuccessMessage.isDisplayedInViewport();
     }
+
+    get invalidLoginMessage(){
+        return $('.flash');
+    }
+    
+     getInvalidLoginMessage(){
+         this.invalidLoginMessage.waitForDisplayed();
+         return this.invalidLoginMessage.getText();
+     }
 }
 module.exports = new Login();
